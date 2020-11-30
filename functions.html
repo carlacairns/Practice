@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    // Your JavaScript goes here!
+    console.log("Hello, World!")
+    let num = prompt("Enter your number: "); 
+    var numbers = [];
+    for (i= 1; i <= num; i++){
+        numbers.push(i); 
+    }
+    var fizzbuzz= [];
+    for (i = 0; i < numbers.length; i++){
+        if ( (numbers[i] % 3 == 0) && (numbers[i] % 5 == 0)) {
+            fizzbuzz.push("fizzbuzz");
+        }
+        else if (numbers[i] % 3 == 0){
+            fizzbuzz.push("fizz");
+        }
+        else if (numbers[i] % 3 == 0){
+            fizzbuzz.push("buzz");
+        }
+        else {
+            fizzbuzz.push(i+1);
+        }
+
+    }
+    console.log(fizzbuzz);
+  </script>
+</body>
+</html>
